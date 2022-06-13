@@ -1,0 +1,19 @@
+h1 {
+    background-color: grey;
+    color: white;
+    border-color: aqua;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+p {
+    background-color: beige;
+}
+
+ul {
+    background-color: azure;
+}
