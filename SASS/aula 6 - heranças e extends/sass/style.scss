@@ -1,0 +1,25 @@
+.btn{
+    width: 75px;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+
+    &.btn-roxo{
+        @extend .btn;
+        background-color: purple;
+        color: white;
+    }
+
+}
+    .btn-amarelo{
+        @extend .btn;
+        background-color:yellow;
+        color: white;
+    }
+    .btn-azul{
+        @extend .btn;
+        background-color: blue;
+        color: white;
+    }
+

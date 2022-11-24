@@ -1,0 +1,9 @@
+
+.texts{
+    h1{
+        @include text-style(#ff4043, 34px, Arial);
+    }
+    p{
+        @include text-style(rgb(54, 206, 40), 22px, Arial);
+    }
+}

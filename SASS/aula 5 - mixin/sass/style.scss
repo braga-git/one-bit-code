@@ -1,0 +1,9 @@
+@import "./colors/colors.scss";
+
+@mixin text-style ($primary-color, $font-size, $font-family){
+    color: $primary-color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+@import "./pages/home.scss";
