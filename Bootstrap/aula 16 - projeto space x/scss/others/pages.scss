@@ -117,6 +117,102 @@ body{
 
 //////// falcon9.html ////////
 
+.container01-falcon9{
+    background-image: url(../../images/falcon9/01.jpg);
+}
+
+    .info-cards-l{
+        padding-top: 305px;
+
+        .h1{
+            font-family: 'Rubik', sans-serif;
+            font-size: 90px;
+            font-weight: bold;
+        }
+    }
+
+.flightData{
+    width: 100%;
+    margin-top: 96px;
+    margin-bottom: 109px;
+
+    .data{
+        font-size: 90px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .dataDescription{
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -6px;
+    }
+}
+
+
+.container02-falcon9{
+    background-image: url(../../images/falcon9/02.jpg);
+    padding-top: 244px;
+    padding-left: 284px;
+
+    .rocketDescription{
+        width: 640px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 50px;
+    }
+}
+
+.container03-falcon9{
+    background-image: url(../../images/falcon9/08.jpg);
+    padding-top: 275px;
+    padding-left: 263px;
+
+    .engineInfo{
+        width: 475px;
+        font-size: 16px;
+        font-weight: 400;
+
+        .rocketClass{
+            font-size: 16px;
+            margin-bottom: 11px;
+        }
+        .engineName{
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .engineDescription{
+            padding-top: 3px;
+            
+        }
+
+        .table{
+            color: white;
+            .engineData{
+                text-align: right;
+            }
+        }
+    }
+}
+
+.carousel{
+    height: 100vh;
+    overflow: hidden;
+
+    .carousel-caption p{
+        font-size: 16px;
+        font-weight: 400;
+        background-color: black;
+        
+    }
+
+    img{
+        height: 100vh;
+    }
+}
+
+//////////////////////////////
 
 
 //////// humanFlight.html ////////
@@ -125,7 +221,7 @@ body{
         background-image: url(../../images/humanFlight/01.jpg);
     }
 
-        .info-cards-large{
+        .info-cards-xl{
             padding-top: 256px;
 
             .arrowDown{
@@ -225,8 +321,6 @@ body{
         background-image: url(../../images/humanFlight/05.jpg);
     }
 
-//////////////////////////////////
-
     .guiaUsuário{
         height: 85vh;
         display: flex;
@@ -253,6 +347,8 @@ body{
             font-weight: 400;
         }
     }
+
+//////////////////////////////////
 
 
 //////// footer ////////
@@ -282,5 +378,5 @@ body{
         }
     }
 
-
+////////////////////////
 
