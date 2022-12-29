@@ -122,7 +122,7 @@ body{
 }
 
     .info-cards-l{
-        padding-top: 305px;
+        padding-top: 29.9vh;
 
         .h1{
             font-family: 'Rubik', sans-serif;
@@ -133,8 +133,8 @@ body{
 
 .flightData{
     width: 100%;
-    margin-top: 96px;
-    margin-bottom: 109px;
+    margin-top: 7.2vh;
+    margin-bottom: 9vh;
 
     .data{
         font-size: 90px;
@@ -149,11 +149,10 @@ body{
     }
 }
 
-
 .container02-falcon9{
     background-image: url(../../images/falcon9/02.jpg);
-    padding-top: 244px;
-    padding-left: 284px;
+    padding-top: 20vh;
+    padding-left: 6.19vw;
 
     .rocketDescription{
         width: 640px;
@@ -163,53 +162,108 @@ body{
     }
 }
 
+
+.carouselInfo{
+    width: 475px;
+}
+
+.rocketClass{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+.infoTitle{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.infoSubtitle{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.infoDescription{
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.table{
+    color: white;
+    font-size: 16px;
+    
+    th{
+        font-weight: 400;
+    }
+
+    td{
+        text-align: right;
+        font-weight: 400;
+    }
+}
+
+.carousel01{
+    background-image: url(../../images/falcon9/03.jpg);
+
+    padding-top: 30.2vh;
+    padding-left: 13.7vw;
+ }
+
+.carousel02{
+    background-image: url(../../images/falcon9/04.jpg);
+    
+    padding-top: 30.2vh;
+    padding-left: 13.7vw;
+ }
+
+.carousel03{
+    background-image: url(../../images/falcon9/05.jpg);
+     
+    padding-top: 30.2vh;
+    padding-left: 13.7vw;
+ }
+
+.carousel04{
+    background-image: url(../../images/falcon9/06.jpg);
+    
+    padding-top: 30.2vh;
+    padding-left: 13.7vw;
+ }
+
+.carousel05{
+    background-image: url(../../images/falcon9/07.jpg);
+    
+    padding-top: 30.2vh;
+    padding-left: 13.7vw;
+ }
+
 .container03-falcon9{
     background-image: url(../../images/falcon9/08.jpg);
-    padding-top: 275px;
-    padding-left: 263px;
+    padding-top: 30vh;
+    padding-left: 14.3vw;
 
     .engineInfo{
         width: 475px;
-        font-size: 16px;
-        font-weight: 400;
 
-        .rocketClass{
-            font-size: 16px;
-            margin-bottom: 11px;
-        }
-        .engineName{
-            font-size: 28px;
-            font-weight: 500;
-            margin-bottom: 0;
-        }
         .engineDescription{
             padding-top: 3px;
             
         }
-
-        .table{
-            color: white;
-            .engineData{
-                text-align: right;
-            }
-        }
     }
 }
 
-.carousel{
-    height: 100vh;
-    overflow: hidden;
-
-    .carousel-caption p{
-        font-size: 16px;
-        font-weight: 400;
-        background-color: black;
-        
-    }
-
+.carouselSlide{
     img{
         height: 100vh;
     }
+}
+
+.carousel-caption p{
+        font-size: 16px;
+        font-weight: 400;
+        background-color: black;
 }
 
 //////////////////////////////
