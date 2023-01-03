@@ -7,146 +7,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>onebitX - Human Spaceflight </title>
+    <title>OnebitX - Human Spaceflight </title>
 
-    <!-- bootstrap css -->
+<!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- style.css -->
+<!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- lib animation -->
+<!-- lib animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- favicon -->
+<!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
 </head>
 
 <body>
-  
+
+<!-- container 01 -->  
     <div class="container-fluid container00 container01-humanFlight">
         <div class="container">
             <header class="header">
                 <nav class="navbar navbar-expand-lg navbar-dark pt-4">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html"><img src="images/logo-obc-2021-darkbg.png" alt="Logo OneBitCode"></a>
-                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="navbar-collapse collapse" id="navbarNav" style>
-                          <ul class="navbar-nav">
+                            <ul class="navbar-nav">
                             <li class="nav-item">
-                              <a class="nav-link" href="falcon9.html">FALCON 9</a>
+                                <a class="nav-link" href="falcon9.html">FALCON 9</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="humanFlight.html">HUMAN SPACE FLIGHT</a>
+                                <a class="nav-link" href="humanFlight.html">HUMAN SPACEFLIGHT</a>
                             </li>
-                          </ul>
+                            </ul>
                         </div>
                     </div>
-                  </nav>
+                    </nav>
             </header>
         </div>
-    
-        <div class="container info-cards-xl text-center">
-            <div data-aos="fade-down" data-aos-duration="1500">
-                <h1 class="display-1">HUMAN SPACEFLIGHT</h1>
-                <h5 class="display-4 pt-4 pb-5">FAZENDO A VIDA MULTIPLANETÁRIA</h5>
+
+        <div class="container info-cards-large text-center" id="card-humanFlight" data-aos="fade-down" data-aos-duration="1500">
+                <h1>HUMAN SPACEFLIGHT</h1>
+                <p>FAZENDO A VIDA MULTIPLANETÁRIA</p>
 
                 <div class="container text-center">
-                    <img src="images/home/arrowDown.gif" alt="arrowDown" class="arrowDown">
+                    <img src="images/home/arrowDown.gif" alt="arrowDown" class="arrow-down">
                 </div>
-            </div> 
         </div>
     </div>
 
 <!-- contato -->
-    <div class="container-fluid contato">
-      <p data-aos="flip-right" data-aos-duration="2000">SpaceX também oferece voos cormeciais para orbita terrestre e lunar. Para começar a planejar a sua jornada, por favor contate-nos por <a href="#">onebitcode@gmail.com</a></p>
+  <div class="container-fluid contato">
+    <p data-aos="flip-right" data-aos-duration="2000">SpaceX também oferece voos cormeciais para orbita terrestre e lunar. Para começar a planejar a sua jornada, por favor contate-nos por <a href="#">onebitcode@gmail.com</a></p>
+  </div>
+
+<!-- container 02 -->
+  <div class="container-fluid container00 container02-humanFlight">
+    <div class="info-cards-medium-right" data-aos="fade-right" data-aos-duration="2000">
+      <p class="card-subject">MISSAO</p>
+      <h2 class="card-title">ORBITA DA TERRA</h2>
+      <p class="card-subtitle">EXPERIMENTE O PLANETA AZUL A 300KM DE ALTURA</p>
+
+      <button class="btn btn-outline-light py-3 px-5">
+        EXPLORAR
+      </button>
     </div>
+  </div>
+  
+<!-- container 03 -->        
+  <div class="container-fluid container00 container03-humanFlight">
+    <div class="info-cards-medium" data-aos="fade-up" data-aos-duration="2000">
+      <p class="card-subject">MISSAO</p>
+      <h2 class="card-title">ESTAÇÃO ESPACIAL</h2>
+      <p class="card-subtitle">TRANSPORTANTO HUMANOS PARA O LABORATÓRIO VOADOR NO CÉU</p>
 
-<!-- containers -->
-        <div class="container-fluid container00 container02-humanFlight">
-          <div class="info-cards-medium-right" data-aos="fade-right" data-aos-duration="2000">
-            <p>MISSAO</p>
-            <h2 class="title">ORBITA DA TERRA</h2>
-            <p class="subtitle">EXPERIMENTE O PLANETA AZUL A 300KM DE ALTURA</p>
+      <button class="btn btn-outline-light py-3 px-5">
+        EXPLORAR
+      </button>
+    </div>
+  </div>
 
-            <button class="btn btn-outline-light py-3 px-5">
-              EXPLORAR
-            </button>
-          </div>
-        </div>
+<!-- container 04 -->        
+  <div class="container-fluid container00 container04-humanFlight">
+    <div class="info-cards-medium-right" id="card-lua" data-aos="zoom-in-up" data-aos-duration="700">
+      <p class="card-subject">MISSAO</p>
+      <h2 class="card-title">LUA</h2>
+      <p class="card-subtitle">RETORNANDO HUMANOS PARA A NOSSA LUA VIZINHA</p>
+      
+      <button class="btn btn-outline-light py-3 px-5">
+        EXPLORAR
+      </button>
+    </div>
+  </div>
         
-        <div class="container-fluid container00 container03-humanFlight">
-          <div class="info-cards-medium" data-aos="fade-up" data-aos-duration="2000">
-            <p>MISSAO</p>
-            <h2 class="title">ESTAÇÃO ESPACIAL</h2>
-            <p class="subtitle">TRANSPORTANTO HUMANOS PARA O LABORATÓRIO VOADOR NO CÉU</p>
+<!-- container 05 -->
+  <div class="container-fluid container00 container05-humanFlight">
+    <div class="info-cards-medium" data-aos="fade-right" data-aos-duration="2000">
+      <p class="card-subject">MISSAO</p>
+      <h2 class="card-title">MARTE E ALÉM</h2>
+      <p class="card-subtitle">O CAMINHO PARA TORNAR A HUMANIDADE MULTIPLANETÁRIA</p>
 
-            <button class="btn btn-outline-light py-3 px-5">
-              EXPLORAR
-            </button>
-          </div>
-        </div>
-        
-        <div class="container-fluid container00 container04-humanFlight">
-          <div class="info-cards-medium-right" data-aos="zoom-in-up" data-aos-duration="700">
-            <p>MISSAO</p>
-            <h2 class="title">LUA</h2>
-            <p class="subtitle">RETORNANDO HUMANOS PARA A NOSSA LUA VIZINHA</p>
-            
-            <button class="btn btn-outline-light py-3 px-5">
-              EXPLORAR
-            </button>
-          </div>
-        </div>
-        
-        <div class="container-fluid container00 container05-humanFlight">
-          <div class="info-cards-medium" data-aos="fade-right" data-aos-duration="2000">
-            <p>MISSAO</p>
-            <h2 class="title">MARTE E ALÉM</h2>
-            <p class="subtitle">O CAMINHO PARA TORNAR A HUMANIDADE MULTIPLANETÁRIA</p>
-
-            <button class="btn btn-outline-light py-3 px-5">
-              EXPLORAR
-            </button>
-          </div>
-        </div>
+      <button class="btn btn-outline-light py-3 px-5">
+        EXPLORAR
+      </button>
+    </div>
+  </div>
 
 <!-- guia do usuário -->
-    <div class="container guiaUsuário">
-      <div class="content">
-          <p data-aos="fade-right" data-aos-duration="1000">Para mais informações sobre os serviçoes entre em contato com <a href="#">onebitcode@gmail.com</a></p>
-          <button class="btn btn-outline-light py-3 px-3" data-aos="flip-left" data-aos-duration="1000">
-            BAIXAR GUIA DO USUÁRIO
-          </button>
-          <button class="btn btn-outline-light py-3 px-3" data-aos="flip-up" data-aos-duration="1000">
-            CAPACIDADES E SERVIÇOS
-          </button>
-      </div>
+  <div class="container user-guide">
+    <div class="content">
+        <p data-aos="fade-right" data-aos-duration="1000">Para mais informações sobre os serviçoes entre em contato com <a href="#">onebitcode@gmail.com</a></p>
+        <button class="btn btn-outline-light py-3 px-3" data-aos="flip-left" data-aos-duration="1000">
+          BAIXAR GUIA DO USUÁRIO
+        </button>
+        <button class="btn btn-outline-light py-3 px-3" data-aos="flip-up" data-aos-duration="1000">
+          CAPACIDADES E SERVIÇOS
+        </button>
     </div>
+  </div>
 
 <!-- footer -->
-    <footer class="container-fluid footer">
-      <span class="me-4 copyright-obc">OneBitCode © 2021</span>
-      <a href="#" class="me-4">Instagram</a>
-      <a href="#" class="me-4">YouTube</a>
-      <a href="#">Twitter</a>
-    </footer>
+  <footer class="container-fluid footer">
+    <span class="me-4 copyright-obc">OneBitCode © 2021</span>
+    <a href="#" class="me-4">Instagram</a>
+    <a href="#" class="me-4">YouTube</a>
+    <a href="#">Twitter</a>
+  </footer>
 
 
-    <!-- script bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- script bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <!-- scrip lib animation -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+<!-- script lib animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

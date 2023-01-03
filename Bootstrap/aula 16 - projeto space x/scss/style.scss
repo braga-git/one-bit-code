@@ -1,3 +1,9 @@
-@import "./others/fonts.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
-@import "./others/pages.scss";
+@import "./commun/variables.scss";
+
+@import "./commun/commun.scss";
+
+@import "./pages/home.scss";
+@import "./pages/falcon9.scss";
+@import "./pages/humanFlight.scss";

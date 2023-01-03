@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
 * {
   padding: 0;
@@ -25,9 +24,18 @@ body {
   width: 240px;
 }
 .navbar li a {
-  color: white !important;
+  color: white;
+}
+.navbar li a:hover {
+  color: #b9b9b9;
 }
 
+@media (max-width: 405px) {
+  .navbar .navbar-brand img {
+    margin-top: 15px;
+    width: 180px;
+  }
+}
 .container00 {
   min-height: 100vh;
   background-position: center;
@@ -35,28 +43,99 @@ body {
   background-size: cover;
 }
 
-.shortTitle {
-  width: 550px;
+.info-cards-large {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.mediumTitle {
-  width: 650px;
+.user-guide {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 240px;
+}
+.user-guide p {
+  color: white;
+  width: auto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.user-guide a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+.user-guide a:hover {
+  color: rgb(218, 218, 218);
+}
+.user-guide .btn {
+  border: 2px solid white;
+  margin-right: 11px;
+  border-radius: 4px;
+  font-weight: 400;
 }
 
-@media (max-width: 750px) {
-  .mediumTitle, .shortTitle {
-    width: auto;
+@media (max-width: 517px) {
+  .user-guide .btn {
+    margin-top: 15px;
   }
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  font-weight: 500;
+  font-size: 12px;
+}
+.footer .copyright-obc {
+  color: #555252;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}
+
+@media (max-width: 405px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+.container00.container01 {
+  background-image: url(../../images/home/01.jpg);
+}
+.container00.container02 {
+  background-image: url(../../images/home/03.jpg);
+}
+.container00.container03 {
+  background-image: url(../../images/home/02.gif);
+}
+.container00.container04 {
+  background-image: url(../../images/home/04.jpg);
+}
+
 .info-cards {
   padding-top: 200px;
 }
-.info-cards .saiba-mais {
+.info-cards .short-title {
+  width: 550px;
+}
+.info-cards .medium-title {
+  width: 650px;
+}
+.info-cards .btn-saiba-mais {
   border: 2px solid white;
   padding: 15px 35px;
   margin-top: 48px;
 }
-.info-cards .arrowDown {
+.info-cards .arrow-down {
   width: 90px;
   margin-top: 5px;
 }
@@ -65,36 +144,22 @@ body {
   .info-cards {
     padding-top: 120px;
   }
+  .info-cards .medium-title, .info-cards .short-title {
+    width: auto;
+  }
+  .info-cards .arrow-down {
+    display: none;
+  }
 }
-.container01 {
-  background-image: url(../../images/home/01.jpg);
-}
-
-.container02 {
-  background-image: url(../../images/home/03.jpg);
-}
-
-.container03 {
-  background-image: url(../../images/home/02.gif);
-}
-
-.container04 {
-  background-image: url(../../images/home/04.jpg);
-}
-
 .container01-falcon9 {
   background-image: url(../../images/falcon9/01.jpg);
 }
 
-.info-cards-l {
-  padding-top: 29.9vh;
-}
-.info-cards-l .h1 {
+.info-cards-large #card-falcon9 .h1 {
   font-family: "Rubik", sans-serif;
   font-size: 90px;
   font-weight: bold;
 }
-
 .flightData {
   width: 100%;
   margin-top: 7.2vh;
@@ -213,25 +278,97 @@ body {
   background-color: black;
 }
 
-.container01-humanFlight {
+.container00.container01-humanFlight {
   background-image: url(../../images/humanFlight/01.jpg);
 }
-
-.info-cards-xl {
-  padding-top: 256px;
+.container00.container02-humanFlight {
+  background-image: url(../../images/humanFlight/02.jpg);
 }
-.info-cards-xl .arrowDown {
-  width: 130px;
-  margin-top: 5px;
+.container00.container03-humanFlight {
+  background-image: url(../../images/humanFlight/03.jpg);
+}
+.container00.container04-humanFlight {
+  background-image: url(../../images/humanFlight/04.jpg);
+}
+.container00.container05-humanFlight {
+  background-image: url(../../images/humanFlight/05.jpg);
 }
 
-.display-1 {
+.info-cards-large h1 {
   font-weight: 500;
   font-size: 10em;
 }
-
-.display-4 {
+.info-cards-large p {
+  font-weight: 300;
   font-size: 2.5em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.info-cards-large .arrow-down {
+  width: 130px;
+}
+
+@media (max-width: 1024px) {
+  .info-cards-large h1 {
+    font-size: 7.5em;
+  }
+}
+@media (max-width: 565px) {
+  .info-cards-large h1 {
+    font-size: 6em;
+  }
+}
+@media (max-width: 475px) {
+  .info-cards-large h1 {
+    font-size: 5em;
+  }
+}
+.card-title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .card-title {
+    font-size: 50px;
+  }
+}
+.card-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.card-subject {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.info-cards-medium-right {
+  padding-left: 55%;
+  padding-top: 15%;
+}
+
+@media (max-width: 1024px) {
+  .info-cards-medium-right {
+    padding-left: 50%;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 565px) {
+  .info-cards-medium-right {
+    padding-left: 5%;
+    padding-top: 40%;
+  }
+  #card-lua {
+    padding-left: 45%;
+    padding-top: 40%;
+  }
+}
+.info-cards-medium {
+  padding-left: 4.9vw;
+  padding-top: 29.1vh;
 }
 
 .contato {
@@ -253,100 +390,10 @@ body {
   color: white;
 }
 
-.container02-humanFlight {
-  background-image: url(../../images/humanFlight/02.jpg);
-}
-
-.info-cards-medium-right {
-  margin-left: 55%;
-  padding-top: 15%;
-}
-.info-cards-medium-right .title {
-  font-size: 60px;
-  font-weight: bold;
-}
-.info-cards-medium-right .subtitle {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-.info-cards-medium-right p {
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.container03-humanFlight {
-  background-image: url(../../images/humanFlight/03.jpg);
-}
-
-.info-cards-medium {
-  padding-left: 92px;
-  padding-top: 276px;
-}
-.info-cards-medium .title {
-  font-size: 60px;
-  font-weight: bold;
-}
-.info-cards-medium .subtitle {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-.info-cards-medium p {
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.container04-humanFlight {
-  background-image: url(../../images/humanFlight/04.jpg);
-}
-
-.container05-humanFlight {
-  background-image: url(../../images/humanFlight/05.jpg);
-}
-
-.guiaUsuário {
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 240px;
-}
-.guiaUsuário p {
-  color: white;
-  width: 800px;
-  font-size: 16px;
-  font-weight: 400;
-}
-.guiaUsuário a {
-  text-decoration: none;
-  color: #b9b9b9;
-}
-.guiaUsuário .btn {
-  border: 2px solid white;
-  margin-right: 11px;
-  border-radius: 4px;
-  font-weight: 400;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
-  font-weight: 500;
-  font-size: 12px;
-}
-.footer .copyright-obc {
-  color: #555252;
-}
-.footer a {
-  text-decoration: none;
-  color: white;
-  transition: 0.1s;
-}
-.footer a:hover {
-  color: #b9b9b9;
+@media (max-width: 526px) {
+  .contato {
+    height: 30vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+.container00{
+    &.container01{
+        background-image: url(../../images/home/01.jpg);
+    }
+
+    &.container02{
+        background-image: url(../../images/home/03.jpg);
+    }
+
+    &.container03{
+        background-image: url(../../images/home/02.gif);
+    }
+
+    &.container04{
+        background-image: url(../../images/home/04.jpg);
+    }
+}
+
+////// CARD DE INFORMAÇÕES //////
+.info-cards{
+    padding-top: 200px;
+
+    .short-title{
+        width: 550px;
+    }
+
+    .medium-title{
+        width: 650px;
+    }    
+
+    .btn-saiba-mais{
+        border: 2px solid white;
+        padding: 15px 35px;
+        margin-top: 48px;
+    }
+
+    .arrow-down{
+        width: 90px;
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 750px){
+    .info-cards{
+        padding-top: 120px;
+    
+        .medium-title, .short-title {
+            width: auto;
+        }
+
+        .arrow-down{
+            display: none;
+        }
+    }
+}
