@@ -22,7 +22,13 @@
 
 ////// CARD DE INFORMAÇÕES - GRANDE //////
 ////// CONTAINER 01 //////
-.info-cards-large{
+.card-humanFlight{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     h1{
     font-weight: 500;
     font-size: 10em;
@@ -42,7 +48,7 @@
 }
 
 @media(max-width: 1024px){
-    .info-cards-large {
+    .card-humanFlight {
         h1{   
             font-size: 7.5em;
         }
@@ -50,7 +56,7 @@
 }
 
 @media(max-width: 565px){
-    .info-cards-large {
+    .card-humanFlight {
         h1{   
             font-size: 6em;
         }
@@ -58,7 +64,7 @@
 }
 
 @media(max-width: 475px){
-    .info-cards-large {
+    .card-humanFlight {
         h1{   
             font-size: 5em;
         }

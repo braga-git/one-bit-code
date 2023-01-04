@@ -37,7 +37,6 @@ body{
     
 }
 
-
 ////// CONTAINER PADRÃO //////
 .container00{
     min-height: 100vh;
@@ -45,16 +44,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-////// CARD DE INFORMAÇÕES GRANDE - falcon9 e humanFlight //////
-.info-cards-large{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 ////// GUIA DO USUÁRIO - falcon9 E humanFlight //////

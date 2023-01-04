@@ -43,14 +43,6 @@ body {
   background-size: cover;
 }
 
-.info-cards-large {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .user-guide {
   height: 85vh;
   display: flex;
@@ -155,43 +147,23 @@ body {
   background-image: url(../../images/falcon9/01.jpg);
 }
 
-.info-cards-large #card-falcon9 .h1 {
+.card-falcon9 {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-falcon9 .h1 {
   font-family: "Rubik", sans-serif;
   font-size: 90px;
   font-weight: bold;
 }
-.flightData {
-  width: 100%;
-  margin-top: 7.2vh;
-  margin-bottom: 9vh;
-}
-.flightData .data {
-  font-size: 90px;
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-.flightData .dataDescription {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: -6px;
-}
 
-.container02-falcon9 {
-  background-image: url(../../images/falcon9/02.jpg);
-  padding-top: 20vh;
-  padding-left: 6.19vw;
+@media (max-width: 495px) {
+  .card-falcon9 .h1 {
+    font-size: 70px;
+  }
 }
-.container02-falcon9 .rocketDescription {
-  width: 640px;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 50px;
-}
-
-.carouselInfo {
-  width: 475px;
-}
-
 .rocketClass {
   font-weight: 400;
   font-size: 16px;
@@ -199,9 +171,8 @@ body {
 }
 
 .infoTitle {
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 4px;
+  margin-top: 1rem;
+  margin-bottom: 0.55rem;
 }
 
 .infoSubtitle {
@@ -226,48 +197,107 @@ body {
   font-weight: 400;
 }
 
+.flightData {
+  width: 100%;
+  margin-top: 10.1vh;
+  margin-bottom: 11.5vh;
+}
+.flightData .data {
+  font-size: 90px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.flightData .dataDescription {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -6px;
+}
+
+@media (max-width: 1024px) {
+  .flightData .dataDescription {
+    font-size: 18px;
+  }
+}
+.container02-falcon9 {
+  background-image: url(../../images/falcon9/02.jpg);
+}
+.container02-falcon9 .containerRocketDescription {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container02-falcon9 .rocketDescription {
+  width: 640px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+@media (max-width: 1024px) {
+  .container02-falcon9 .rocketDescription {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .container02-falcon9 .rocketDescription {
+    width: auto;
+  }
+}
 .carousel01 {
   background-image: url(../../images/falcon9/03.jpg);
-  padding-top: 30.2vh;
-  padding-left: 13.7vw;
 }
 
 .carousel02 {
   background-image: url(../../images/falcon9/04.jpg);
-  padding-top: 30.2vh;
-  padding-left: 13.7vw;
 }
 
 .carousel03 {
   background-image: url(../../images/falcon9/05.jpg);
-  padding-top: 30.2vh;
-  padding-left: 13.7vw;
 }
 
 .carousel04 {
   background-image: url(../../images/falcon9/06.jpg);
-  padding-top: 30.2vh;
-  padding-left: 13.7vw;
 }
 
 .carousel05 {
   background-image: url(../../images/falcon9/07.jpg);
-  padding-top: 30.2vh;
-  padding-left: 13.7vw;
 }
 
+.carouselInfo {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+@media (max-width: 1024px) {
+  .carouselInfo {
+    display: block;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 690px) {
+  .carouselInfo {
+    width: auto;
+  }
+}
 .container03-falcon9 {
   background-image: url(../../images/falcon9/08.jpg);
-  padding-top: 30vh;
-  padding-left: 14.3vw;
 }
 .container03-falcon9 .engineInfo {
-  width: 475px;
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
 }
 .container03-falcon9 .engineInfo .engineDescription {
   padding-top: 3px;
 }
 
+@media (max-width: 690px) {
+  .container03-falcon9 .engineInfo {
+    width: auto;
+  }
+}
 .carouselSlide img {
   height: 100vh;
 }
@@ -294,32 +324,39 @@ body {
   background-image: url(../../images/humanFlight/05.jpg);
 }
 
-.info-cards-large h1 {
+.card-humanFlight {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-humanFlight h1 {
   font-weight: 500;
   font-size: 10em;
 }
-.info-cards-large p {
+.card-humanFlight p {
   font-weight: 300;
   font-size: 2.5em;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.info-cards-large .arrow-down {
+.card-humanFlight .arrow-down {
   width: 130px;
 }
 
 @media (max-width: 1024px) {
-  .info-cards-large h1 {
+  .card-humanFlight h1 {
     font-size: 7.5em;
   }
 }
 @media (max-width: 565px) {
-  .info-cards-large h1 {
+  .card-humanFlight h1 {
     font-size: 6em;
   }
 }
 @media (max-width: 475px) {
-  .info-cards-large h1 {
+  .card-humanFlight h1 {
     font-size: 5em;
   }
 }
