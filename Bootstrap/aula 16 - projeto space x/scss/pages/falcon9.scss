@@ -49,12 +49,7 @@
     color: white;
     font-size: 16px;
 
-    th{
-        font-weight: 400;
-    }
-
     td{
-        text-align: right;
         font-weight: 400;
     }
 }
@@ -184,10 +179,41 @@
     }
 }
 
-////// CAROUSEL N2 ////// 
+////// CAROUSEL SUMMARY ////// 
 .carouselSlide{
-    img{
-        height: 100vh;
+    .carouselSummary{
+        background-size: 100% 100%;
+    }
+
+    .carouselSummary01{
+        background-image: url(../../images/falcon9/09.jpg);
+     }
+    
+    .carouselSummary02{
+        background-image: url(../../images/falcon9/10.jpg);
+     }
+    
+    .carouselSummary03{
+        background-image: url(../../images/falcon9/11.jpg);
+     }
+    
+    .carouselSummary04{
+        background-image: url(../../images/falcon9/12.jpg);
+     }
+    
+    .carouselSummary05{
+        background-image: url(../../images/falcon9/13.jpg);
+     }
+    .carouselSummary06{
+        background-image: url(../../images/falcon9/14.jpg);
+     }
+}
+
+@media(max-width: 1024px){
+    .carouselSlide{
+        .carouselSummary{
+            background-size: cover;
+        }
     }
 }
 
@@ -195,4 +221,10 @@
         font-size: 16px;
         font-weight: 400;
         background-color: black;
+}
+
+@media(max-width: 768px){
+    .carousel-caption p{
+        display: flex;
+    }
 }

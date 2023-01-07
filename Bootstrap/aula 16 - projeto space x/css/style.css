@@ -189,11 +189,7 @@ body {
   color: white;
   font-size: 16px;
 }
-.table th {
-  font-weight: 400;
-}
 .table td {
-  text-align: right;
   font-weight: 400;
 }
 
@@ -298,16 +294,44 @@ body {
     width: auto;
   }
 }
-.carouselSlide img {
-  height: 100vh;
+.carouselSlide .carouselSummary {
+  background-size: 100% 100%;
+}
+.carouselSlide .carouselSummary01 {
+  background-image: url(../../images/falcon9/09.jpg);
+}
+.carouselSlide .carouselSummary02 {
+  background-image: url(../../images/falcon9/10.jpg);
+}
+.carouselSlide .carouselSummary03 {
+  background-image: url(../../images/falcon9/11.jpg);
+}
+.carouselSlide .carouselSummary04 {
+  background-image: url(../../images/falcon9/12.jpg);
+}
+.carouselSlide .carouselSummary05 {
+  background-image: url(../../images/falcon9/13.jpg);
+}
+.carouselSlide .carouselSummary06 {
+  background-image: url(../../images/falcon9/14.jpg);
 }
 
+@media (max-width: 1024px) {
+  .carouselSlide .carouselSummary {
+    background-size: cover;
+  }
+}
 .carousel-caption p {
   font-size: 16px;
   font-weight: 400;
   background-color: black;
 }
 
+@media (max-width: 768px) {
+  .carousel-caption p {
+    display: flex;
+  }
+}
 .container00.container01-humanFlight {
   background-image: url(../../images/humanFlight/01.jpg);
 }
