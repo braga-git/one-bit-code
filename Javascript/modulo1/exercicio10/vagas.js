@@ -12,15 +12,27 @@ function menu(){
 
 
 function listarVagas(){
-    for(i = 0; i < vagas.length; i++){
-        alert(
-            "Indice: " + i + "\n" +
-            "Nome: " + vagas[i].nome + "\n" +
-            "Quantidade de candidatos: " + vagas[i].candidatos.length
-        )
+    // for(i = 0; i < vagas.length; i++){
+    //     alert(
+    //         "Indice: " + i + "\n" +
+    //         "Nome: " + vagas[i].nome + "\n" +
+    //         "Quantidade de candidatos: " + vagas[i].candidatos.length
+    //     )
+    // }
+
+    const vagasEmTexto = vagas.reduce(function (textoFinal, vaga, indice){
+        textoFinal += indice + ". "
+        textoFinal += vaga.nome
+        textoFinal += " (" + vaga.candidatos.length + " candidatos)\n"
+        return textoFinal
+    }, "")
+
+    if(vagasEmTexto.length > 0) {
+        alert(vagasEmTexto)
+    } else {
+        alert("Nenhuma vaga disponível no momento!")
     }
 
-    return
 } 
 
 
