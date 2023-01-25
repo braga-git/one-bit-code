@@ -47,6 +47,7 @@ function remover(){
     const confirmaRemover = confirm("Remover o jogador" + playerToRemove.innerText + "?")
 
     if(confirmaRemover){
+        // numberToRemove.remove()
         document.getElementById('escalados').removeChild(playerToRemove)
         document.getElementById('numberToRemove').value = ''
     }
