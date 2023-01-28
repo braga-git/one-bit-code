@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-family: sans-serif;
+}
+
+#gameBoard{
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+}
+
+#gameBoard span{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win{
+    background-color: #25a340;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
